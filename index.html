@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sonika Srinivas</title>
+<meta name="description" content="Sonika Srinivas — Software & Data Engineer grad student.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- INTRO SEQUENCE: raw data -> pipeline -> scrambled headline -> reveal -->
+<div id="introOverlay">
+  <div class="intro-glyph-layer"></div>
+  <div class="intro-pipeline">
+    <div class="p-node"><div class="node-box">Raw</div></div>
+    <div class="p-link"><div class="dot"></div></div>
+    <div class="p-node"><div class="node-box">Engineer</div></div>
+    <div class="p-link"><div class="dot"></div></div>
+    <div class="p-node"><div class="node-box">Clarity</div></div>
+  </div>
+  <div class="intro-headline">
+    <div class="scramble-line"></div>
+  </div>
+  <button class="intro-skip" type="button">Skip ↓</button>
+</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo"><span class="dot"></span>SONIKA SRINIVAS</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="Sonika_Srinivas_Resume.pdf" class="nav-cta-mobile" target="_blank" rel="noopener">Resume ↓</a></li>
+    </ul>
+    <a href="Sonika_Srinivas_Resume.pdf" class="nav-cta" target="_blank" rel="noopener">Resume ↓</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <p class="eyebrow">Software Engineer → Data Engineer → Data Analyst · MS Information Systems, SDSU ·  Open to full-time Roles<span class="status-dot"></span></p>
+    <!-- <h1 class="headline"><span class="accent">Sonika</span> Srinivas</h1> -->
+    <h1 class="headline"><span class="accent">SONIKA</span><br>SRINIVAS</h1>
+    <p class="sub">
+      Graduate Student with <strong>2+ years</strong> experience across software & data engineering, quantitative analytics, and machine learning, 
+      building reproducible data pipelines, analytical platforms, and AI-enabled decision-support solutions for large-scale datasets. 
+      Experienced in outcomes measurement, indicator analysis, data quality, evidence-based evaluation, and results reporting.
+      Strong technical foundation in Python, SQL, machine learning, LLMs, cloud data platforms, statistical analysis, and data visualization, 
+      with experience translating complex analytical findings into reliable dashboards and actionable insights. 
+      Combines software engineering rigor with analytical and research capabilities to connect data, evidence, and operational decision-making across complex, multidisciplinary environments.
+      I work on the parts of the stack most people skip — Solution architecture, latency budgets, performance enhancements and analysis that stakeholders can trust.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-solid" href="#projects">View projects</a>
+      <a class="btn btn-ghost" href="https://github.com/sonikasri04" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/sonikasrinivas/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+
+    <div class="pipeline" aria-hidden="false">
+      <!-- <p class="pipeline-label">// a pipeline shaped like my resume</p> -->
+      <div class="pipeline-track">
+        <div class="p-node">
+          <div class="p-line"><span class="dot" style="animation-delay:0s"></span></div>
+          <div class="node-box">IN</div>
+          <div class="node-title">Ingest</div>
+          <div class="node-metric">500 events/sec</div>
+          <div class="node-sub">Kafka · Faust</div>
+        </div>
+        <div class="p-node">
+          <div class="p-line"><span class="dot" style="animation-delay:0.8s"></span></div>
+          <div class="node-box">TF</div>
+          <div class="node-title">Transform</div>
+          <div class="node-metric">2,500+ ETL queries</div>
+          <div class="node-sub">Azure Data Factory</div>
+        </div>
+        <div class="p-node">
+          <div class="p-line"><span class="dot" style="animation-delay:1.6s"></span></div>
+          <div class="node-box">ST</div>
+          <div class="node-title">Store</div>
+          <div class="node-metric">−74% latency</div>
+          <div class="node-sub">Cosmos DB · Postgres</div>
+        </div>
+        <div class="p-node">
+          <div class="node-box">SV</div>
+          <div class="node-title">Serve</div>
+          <div class="node-metric">&lt;100ms p99</div>
+          <div class="node-sub">FastAPI · Streamlit</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Experience</h2>
+      <span class="section-note">2023 — present</span>
+    </div>
+    <div class="timeline">
+      <div class="t-item">
+        <div class="t-role">Data Analyst Student Assistant — San Diego State University</div>
+        <div class="t-meta"><span>Feb 2026 — Present</span><span>·</span><span>San Diego, CA</span></div>
+        <ul>
+          <li>Architected and deployed an OpenAI API-driven applicant screening workflow with built-in auditability guardrails, reducing
+              manual review time by 83% while maintaining strict data governance standards in a compliance-sensitive academic environment.</li>
+          <li>Engineered prompt design and validation logic to ensure reproducibility, traceability, and explainability of AI-generated screening
+              decisions, supporting auditability requirements in a governance-heavy research setting.</li>
+          <li>Built automated data quality and consistency checks for incoming applicant datasets, ensuring reliable, standardized inputs to the
+              AI screening pipeline and minimizing downstream errors.</li>
+        </ul>
+      </div>
+      <div class="t-item">
+        <div class="t-role">Software Development Engineer — Ericsson</div>
+        <div class="t-meta"><span>Sep 2023 — Jul 2025</span><span>·</span><span>Bengaluru, India</span></div>
+        <ul>
+          <li>Owned a core platform feature end-to-end as Feature Owner — Architected end-to-end migration from on-premise MySQL to Azure Cosmos DB, designing partition key strategy, NoSQL schema,
+              and indexing to eliminate cross-partition queries cutting latency by 74% and cost per request by 30%; built Azure Data Factory
+              pipelines and Azure Functions for ETL orchestration across millions of records</li>
+          <li>Refactored 2,500+ SQL ETL queries into optimized Cosmos DB NoSQL access patterns; re-engineered data ingestion and
+              transformation logic with schema validation and error handling at each stage, increasing system throughput 4x.</li>
+          <li>Built and owned CI/CD pipelines (GitHub Actions, Azure DevOps) for automated deployment of data pipelines, implementing
+              staged rollouts and automated integration tests achieving zero-downtime releases and reducing deployment incidents by ~90%.</li>
+        </ul>
+      </div>
+      <div class="t-item">
+        <div class="t-role">Software Developer Intern — Ericsson</div>
+        <div class="t-meta"><span>Feb 2023 — Sep 2023</span><span>·</span><span>Bengaluru, India</span></div>
+        <ul>
+          <li>Translated business requirements and KPIs (latency, throughput, data volume, file size limits) into technical specifications.</li>
+          <li>Developed and delivered end-to-end features for an internal platform as a full-stack developer, building responsive Vue.js frontends
+              tightly integrated with backend services and REST APIs — boosting team efficiency by 30% through streamlined, reusable
+              workflows. Optimized backend data processing pipelines and API-driven data flows, cutting data processing time by 40% through
+              query tuning, caching strategies, and more efficient service-layer logic.</li>
+          <li>Implemented scalable backend services in Python and Node.js-based REST APIs, designed against API-level KPIs (response time, payload size, concurrency), supporting high data ingestion, concurrent users, and large file transfers — improving API response times 25–30% under load.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Projects</h2>
+      <span class="section-note">all repos on github.com/sonikasri04</span>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="p-card wide" data-project="recommender">
+        <div class="p-card-top">
+          <div class="p-title">Personalized Content Recommender</div>
+          <div class="p-links">
+            <a class="icon-link" href="https://github.com/sonikasri04/content_recommender" target="_blank" rel="noopener" aria-label="View source on GitHub">↗</a>
+            <button class="icon-link media-btn" data-media="recommender" aria-label="View result images"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 15l-5-5-4 4-3-3-6 6"/></svg></button>
+            <!-- <button class="icon-link media-btn" data-doc="recommender" aria-label="View project doc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5"/><path d="M9 9h1M9 13h6M9 17h6"/></svg></button> -->
+          </div>
+        </div>
+        <p class="p-desc">
+          Replaced popularity-based ranking with a two-stage ML pipeline on the MIND dataset — 2.7M impressions, 50K users,
+          22K articles. A PyTorch two-tower network retrieves top-100 candidates; a LightGBM re-ranker scores them on
+          behavioral features, served via a stateless FastAPI endpoint.
+        </p>
+        <div class="p-metrics">
+          <span class="metric-chip">CTR@5 0.1428</span>
+          <span class="metric-chip">+38.8% lift vs baseline</span>
+          <span class="metric-chip">p &lt; 0.000001, n=47,000</span>
+          <span class="metric-chip">sub-100ms p99</span>
+        </div>
+        <div class="p-stack">
+          <span class="stack-tag">PyTorch</span><span class="stack-tag">LightGBM</span>
+          <span class="stack-tag">FastAPI</span><span class="stack-tag">scikit-learn</span>
+          <span class="stack-tag">Pandas</span>
+        </div>
+      </div>
+
+      <div class="p-card" data-project="clickstream">
+        <div class="p-card-top">
+          <div class="p-title">Real-Time Clickstream Analytics</div>
+          <div class="p-links">
+            <a class="icon-link" href="https://github.com/sonikasri04/clickstream-analytics" target="_blank" rel="noopener" aria-label="View source on GitHub">↗</a>
+            <button class="icon-link media-btn" data-media="clickstream" aria-label="View result images"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 15l-5-5-4 4-3-3-6 6"/></svg></button>
+            <!-- <button class="icon-link media-btn" data-doc="clickstream" aria-label="View project doc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5"/><path d="M9 9h1M9 13h6M9 17h6"/></svg></button> -->
+          </div>
+        </div>
+        <p class="p-desc">
+          Streaming pipeline that turns raw e-commerce click events into live funnel and session metrics in under
+          2 seconds — tumbling and sliding window aggregations with a dual-sink architecture for durability and
+          low-latency reads.
+        </p>
+        <div class="p-metrics">
+          <span class="metric-chip">500 events/sec</span>
+          <span class="metric-chip">&lt;2s end-to-end</span>
+        </div>
+        <div class="p-stack">
+          <span class="stack-tag">Kafka</span><span class="stack-tag">Faust</span>
+          <span class="stack-tag">PostgreSQL</span><span class="stack-tag">Redis</span>
+          <span class="stack-tag">Docker</span>
+        </div>
+      </div>
+
+      <div class="p-card" data-project="insurance">
+        <div class="p-card-top">
+          <div class="p-title">Insurance Premium Predictor</div>
+          <div class="p-links">
+            <a class="icon-link" href="https://github.com/sonikasri04/insurance-premium-predictor" target="_blank" rel="noopener" aria-label="View source on GitHub">↗</a>
+            <button class="icon-link media-btn" data-media="insurance" aria-label="View result images"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 15l-5-5-4 4-3-3-6 6"/></svg></button>
+            <!-- <button class="icon-link media-btn" data-doc="insurance" aria-label="View project doc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5"/><path d="M9 9h1M9 13h6M9 17h6"/></svg></button> -->
+          </div>
+        </div>
+        <p class="p-desc">
+          A health insurance premium model built around explainability, not just accuracy — full EDA, a Random Forest
+          regressor, SHAP-based explainability, a fairness audit across demographic groups, and an interactive
+          Streamlit app for live predictions.
+        </p>
+        <div class="p-metrics">
+          <span class="metric-chip">R² 0.875</span>
+          <span class="metric-chip">SHAP explainability</span>
+        </div>
+        <div class="p-stack">
+          <span class="stack-tag">Random Forest</span><span class="stack-tag">SHAP</span>
+          <span class="stack-tag">Streamlit</span><span class="stack-tag">Python</span>
+        </div>
+      </div>
+
+      <div class="p-card" data-project="parks">
+        <div class="p-card-top">
+          <div class="p-title">National Parks Explorer</div>
+          <div class="p-links">
+            <a class="icon-link" href="https://github.com/sonikasri04/insightcrew" target="_blank" rel="noopener" aria-label="View source on GitHub">↗</a>
+            <button class="icon-link media-btn" data-media="parks" aria-label="View result images"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 15l-5-5-4 4-3-3-6 6"/></svg></button>
+            <!-- <button class="icon-link media-btn" data-doc="parks" aria-label="View project doc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5"/><path d="M9 9h1M9 13h6M9 17h6"/></svg></button> -->
+          </div>
+        </div>
+        <p class="p-desc">
+          A Streamlit app that connects live to an Azure SQL database of U.S. National Parks, with a Gallery view,
+          a prebuilt SQL "Ask" page, and an embedded Tableau Public dashboard for exploring park data visually.
+        </p>
+        <div class="p-metrics">
+          <span class="metric-chip">Azure SQL</span>
+          <span class="metric-chip">Tableau embed</span>
+        </div>
+        <div class="p-stack">
+          <span class="stack-tag">Streamlit</span><span class="stack-tag">Azure SQL</span>
+          <span class="stack-tag">Tableau</span><span class="stack-tag">Python</span>
+        </div>
+      </div>
+
+      <div class="p-card" data-project="voicelink">
+        <div class="p-card-top">
+          <div class="p-title">VoiceLink</div>
+          <div class="p-links">
+            <a class="icon-link" href="https://github.com/sonikasri04/VoiceLink" target="_blank" rel="noopener" aria-label="View source on GitHub">↗</a>
+            <button class="icon-link media-btn" data-media="voicelink" aria-label="View result images"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 15l-5-5-4 4-3-3-6 6"/></svg></button>
+            <!-- <button class="icon-link media-btn" data-doc="voicelink" aria-label="View project doc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5"/><path d="M9 9h1M9 13h6M9 17h6"/></svg></button> -->
+          </div>
+        </div>
+        <p class="p-desc">
+          A full-stack application with a dedicated API layer, dashboard, and web client — structured as separate
+          <code>voice_link_api</code>, <code>dashboard</code>, and <code>web</code> modules for clean separation
+          between data, service, and interface layers.
+        </p>
+        <div class="p-metrics">
+          <span class="metric-chip">AI-Assistant</span>
+          <span class="metric-chip">Speech-to-Text</span>
+        </div>
+        <div class="p-stack">
+          <span class="stack-tag">Groq LLM</span>
+          <span class="stack-tag">Python</span>
+        </div>
+      </div>
+
+      <!-- <div class="p-card wide" data-project="portfolio">
+        <div class="p-card-top">
+          <div class="p-title">Technology Portfolio Budget & Delivery Analytics Dashboard</div>
+          <div class="p-links">
+            <button class="icon-link media-btn" data-media="portfolio" aria-label="View result images"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 15l-5-5-4 4-3-3-6 6"/></svg></button>
+            <button class="icon-link media-btn" data-doc="portfolio" aria-label="View project doc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5"/><path d="M9 9h1M9 13h6M9 17h6"/></svg></button>
+          </div>
+        </div>
+        <p class="p-desc">
+          Unified budget, delivery, and prioritization tracking across a simulated 15-project technology portfolio under
+          a fixed budget — variance and burn-rate forecasting logic, a Red/Amber/Green health model tied to sprint
+          velocity and on-time completion, and LLM-generated monthly narrative summaries with human-validated review
+          checkpoints.
+        </p>
+        <div class="p-metrics">
+          <span class="metric-chip">15-project portfolio</span>
+          <span class="metric-chip">RAG health model</span>
+        </div>
+        <div class="p-stack">
+          <span class="stack-tag">Python</span><span class="stack-tag">SQL</span>
+          <span class="stack-tag">Power BI</span><span class="stack-tag">OpenAI</span>
+        </div>
+      </div> -->
+
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Research</h2>
+      <span class="section-note">Working paper · SSRN · Dec 2025</span>
+    </div>
+    <div class="research-card">
+      <div class="research-top">
+        <div class="research-title">The Personalization Paradox: A Bias-Enabled Guidance Trap</div>
+        <a class="icon-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5931880" target="_blank" rel="noopener" aria-label="Read on SSRN">↗</a>
+      </div>
+      <p class="p-desc">
+        Examines how AI-driven career coaching systems, in optimizing for personalization through relevance
+        weighting and reinforcement loops, can overfit to biased demographic patterns and narrow the aspirational
+        paths shown to users.
+      </p>
+      <p class="p-desc">
+        Drawing on interviews with AI system architects, the paper identifies design mechanisms — diversity
+        constraints, exploration parameters, transparency features — that balance algorithmic optimization against
+        user autonomy, and proposes the <strong>Epistemic Immune System (EIS)</strong>: a framework treating bias
+        as a diagnostic signal rather than noise, using controlled bias exposure and structured exploration to
+        surface hidden bias in AI-guided decision-making.
+      </p>
+      <div class="p-stack">
+        <span class="stack-tag">Working Paper</span><span class="stack-tag">SSRN</span><span class="stack-tag">Dec 2025</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-head">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-cat">
+        <h3>Languages</h3>
+        <div class="skill-tags">
+          <span>Python</span><span>SQL</span><span>Java</span><span>R</span><span>PySpark</span><span>PowerShell</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Data Engineering</h3>
+        <div class="skill-tags">
+          <span>Apach Spark</span><span>Databricks</span><span>Kafka</span><span>Docker</span>
+          <span>Airflow</span><span>Hive</span><span>Snowflake</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Cloud & Platforms</h3>
+        <div class="skill-tags">
+          <span>Azure Data Lake</span><span>Azure Data Factory</span><span>Synapse</span>
+          <span>Azure Functions</span><span>AWS</span><span>CGP</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Databases</h3>
+        <div class="skill-tags">
+          <span>SQL Server</span><span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>CosmosDB NoSQL</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>AI & ML</h3>
+        <div class="skill-tags">
+          <span>Scikit-Learn</span><span>XGBoost</span><span>Random Forest</span><span>SVM</span>
+          <span>TF-IDF</span><span>OpenAI</span><span>Claude</span><span>Groq LLM</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Full-Stack Development</h3>
+        <div class="skill-tags">
+          <span>Vue.js</span><span>REST API</span><span>Nginx</span><span>Swagger</span>
+          <span>Node.js</span><span>Flask API</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Data Analysis & visualization</h3>
+        <div class="skill-tags">
+          <span>Tableau</span><span>Power BI</span><span>Streamlit</span><span>Excel</span><span>Google Analytics</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>DevOps & Version Control</h3>
+        <div class="skill-tags">
+          <span>Git</span><span>Azure DevOps</span>
+          <span>GitHub Actions</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-head">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Education</h2>
+    </div>
+    <div class="edu-list">
+      <div class="edu-item">
+        <div>
+          <div class="edu-school">San Diego State University</div>
+          <div class="edu-degree">M.S. Information Systems — AI & Big Data, Machine Learning, Database Management,
+            Time Series Analytics</div>
+        </div>
+        <div class="edu-right">Aug 2025 — May 2027<div class="edu-gpa">GPA 3.5 / 4.0</div></div>
+      </div>
+      <div class="edu-item">
+        <div>
+          <div class="edu-school">Visvesvaraya Technological University</div>
+          <div class="edu-degree">B.E. Information Science — Data Structures & Algorithms, Cloud Computing,
+            Big Data Analytics, AI & ML</div>
+        </div>
+        <div class="edu-right">Aug 2019 — Aug 2023<div class="edu-gpa">GPA 3.5 / 4.0</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <footer id="contact">
+    <h2 class="contact-head">Let's build something that scales.</h2>
+    <div class="contact-links">
+      <a class="contact-row" href="mailto:sonikasri04@gmail.com">
+        <span><span class="label">Email</span><br>sonikasri04@gmail.com</span><span>↗</span>
+      </a>
+      <a class="contact-row" href="tel:+16195384480">
+        <span><span class="label">Phone</span><br>+1 (619) 538-4480</span><span>↗</span>
+      </a>
+      <a class="contact-row" href="https://github.com/sonikasri04" target="_blank" rel="noopener">
+        <span><span class="label">GitHub</span><br>github.com/sonikasri04</span><span>↗</span>
+      </a>
+      <a class="contact-row" href="https://www.linkedin.com/in/sonikasrinivas/" target="_blank" rel="noopener">
+        <span><span class="label">LinkedIn</span><br>linkedin.com/in/sonikasrinivas</span><span>↗</span>
+      </a>
+    </div>
+    <div class="foot-bottom">
+      <span>San Diego, CA (Open to Relocation)</span>
+      <a href="Sonika_Srinivas_Resume.pdf" target="_blank" rel="noopener">Download résumé (PDF) ↓</a>
+      <span>© 2026 Sonika Srinivas</span>
+    </div>
+  </footer>
+
+</main>
+
+<!-- LIGHTBOX -->
+<div class="lightbox-overlay" id="lightboxOverlay">
+  <div class="lightbox-box" id="lightboxBox"></div>
+</div>
+
+<script src="js/intro.js" defer></script>
+<script src="js/script.js" defer></script>
+
+</body>
+</html>
